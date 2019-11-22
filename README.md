@@ -11,7 +11,7 @@ My final project for Creative Coding I is called <i>"Sandy Words"</i>. It is an 
  <li>The music in the background is present for a sense of relaxation</li>
  </ul>
  
- <b></b>
+ <p></p>
 
 <h3>#Milestone #1: November 22nd, 2019</h3>
 <ul>
