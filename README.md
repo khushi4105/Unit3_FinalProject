@@ -1,8 +1,13 @@
 # Unit3_FinalProject
-My final project for Creative Coding I is called <i>"Sandy Words"</i>. It is an art & text-based game in which the user has freedom to produce multiple text extracts. They also have to option to enable an automated-voice to recite the text at the speed in which it is being produced. The background is simply present to create a relaxing ambience while the user can listen to their extract.
+My final project for Creative Coding I is called <i>"Sandy Words"</i>. It is an art & text-based game in which the user has freedom to produce multiple text extracts. They also have to option to enable an automated-voice to recite the text at the speed in which it is being produced. The background is simply present to create a relaxing ambience while the user can listen to their Sandy Words that are produced.
 
 <h2>#Interaction</h2>
-<p>(WHAT IS AN INTERESTING WAY THAT A USER CAN INTERACT WITH YOUR PROGRAM?)</p>
+<ul>My program is very interactive. I will include various coding data types to help create the following in my program: 
+ <li>1. The text id produced while the mouse is moving</li>
+ <li>2. The size of the text depends on the speed of the mouse</li>
+ <li>3. If the "SPACE" key is pressed, the font, size & the text itself change using a random generator</li>
+ <li>4. If the "B" key is pressed, the abstract SAND background re-starts from the top</li>
+ <li>5. The music in the background is present for a sense of relaxation</li>
 
 <h3>#Milestone #1: November 22nd, 2019</h3>
 <ul>
