@@ -5,6 +5,7 @@ My final project for Creative Coding I is called <i>"Sandy Words"</i>. It is an 
 
 <ul>My program is very interactive. I will include various coding data types to help create the following in my program: 
  <br>
+ </br>
  <li>The text id produced while the mouse is moving</li>
  <li>The size of the text depends on the speed of the mouse</li>
  <li>If the "SPACE" key is pressed, the font, size & the text itself change using a random generator</li>
