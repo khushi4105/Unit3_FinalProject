@@ -10,8 +10,6 @@ My final project for Creative Coding I is called <i>"Sandy Words"</i>. It is an 
  <li>If the "B" key is pressed, the abstract SAND background re-starts from the top</li>
  <li>The music in the background is present for a sense of relaxation</li>
  </ul>
- 
- <p></p>
 
 <h3>#Milestone #1: November 22nd, 2019</h3>
 <ul>
