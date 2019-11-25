@@ -6,8 +6,8 @@ My final project for Creative Coding I is called <i>"Sandy Words"</i>. It is an 
  My program is very interactive. I will include various coding data types to help create the following in my program:
  <li>The text is produced while the mouse is moving</li>
  <li>The size of the text depends on the speed of the mouse</li>
- <li>If the "SPACE" key is pressed, the font, size & the text itself change using a random generator</li>
- <li>If the "B" key is pressed, the abstract SAND background re-starts from the top</li>
+ <li>If the "SPACE" key is pressed, the font & size of the text changes using a random generator</li>
+ <li>If the "a" key is pressed, the abstract SAND background re-starts to pile up again</li>
  <li>The music in the background is present for a sense of relaxation</li>
  </ul>
 
@@ -21,7 +21,7 @@ My final project for Creative Coding I is called <i>"Sandy Words"</i>. It is an 
 <ul>
  <li> Add text </li>
  <li> Add SAND drip background </li>
- <li> Add command for the changes included when key "a" is pressed </li>
+ <li> Add command for the changes included when "SPACE" and "a" keys are pressed </li>
  </ul>
 
 <h3>#Milestone #3: December 13th, 2019</h3>
