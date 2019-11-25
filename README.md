@@ -13,7 +13,7 @@ My final project for Creative Coding I is called <i>"Sandy Words"</i>. It is an 
 
 <h3>#Milestone #1: November 22nd, 2019</h3>
 <ul>
- <li> Come up with a project idea </li>
+ <li> Come up with a project idea (approve it by John & Linus) </li>
  <li> Complete planning all other milestones </li>
  </ul>
 
