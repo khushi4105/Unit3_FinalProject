@@ -28,4 +28,5 @@ My final project for Creative Coding I is called <i>"Sandy Words"</i>. It is an 
 <ul>
  <li> Add text voiceover </li>
  <li> Add soothing background music </li>
+ <li> Check if the program works + final touch-up's </li>
  </ul>
