@@ -3,7 +3,8 @@ class Sand
   //Member data
   float _x;
   float _y;
-  float _velocityY;
+  float _velocityY;  
+  boolean _dead = false;
 
   //Default Constructors
   Sand()
@@ -16,15 +17,11 @@ class Sand
   //Member Functions
   void Fall()
   {
-    if (_y > 699)
-    {
-      _y = 699; 
-    {
-      _y = _y + _velocityY;
+    _y = _y + _velocityY;
   }
 
-  //Draw
-  void Draw()
+  //Make's the particle
+  void Make()
   {
     fill(216, 169, 66);
     ellipse( _x, _y, 10, 10);
@@ -33,6 +30,6 @@ class Sand
   void Update()
   {
     Fall();
-    Draw();
+    Make();
   }
 }
