@@ -1,4 +1,3 @@
-
 class Boundary 
 {
   float x;
@@ -8,7 +7,8 @@ class Boundary
 
   Body b;
 
-  Boundary(float x_, float y_, float w_, float h_) {
+  Boundary(float x_,float y_, float w_, float h_) 
+  {
     x = x_;
     y = y_;
     w = w_;
@@ -23,17 +23,17 @@ class Boundary
 
     BodyDef bd = new BodyDef();
     bd.type = BodyType.STATIC;
-    bd.position.set(box2d.coordPixelsToWorld(x, y));
+    bd.position.set(box2d.coordPixelsToWorld(x,y));
     b = box2d.createBody(bd);
-
-    b.createFixture(sd, 1);
+    
+    b.createFixture(sd,1);
   }
 
   void display() 
   {
-    fill(0);
+    fill(255);
     stroke(0);
     rectMode(CENTER);
-    rect(x, y, w, h);
+    rect(x,y,w,h);
   }
 }
