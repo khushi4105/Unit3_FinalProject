@@ -54,4 +54,17 @@ void draw()
       boxes.remove(i);
     }
   }
+
+  if (keyPressed)
+  {
+    if (key == 'a')
+    {
+      for (int i = boxes.size()-1; i >= 0; i--) 
+      {
+        Box b = boxes.get(i);
+]
+        boxes.remove(i);
+      }
+    }
+  }
 }
