@@ -1,3 +1,7 @@
+import ddf.minim.*;
+Minim minim;
+AudioPlayer[] music = new AudioPlayer[1];
+
 import shiffman.box2d.*;
 import org.jbox2d.collision.shapes.*;
 import org.jbox2d.common.*;
@@ -6,7 +10,6 @@ import org.jbox2d.dynamics.*;
 Box2DProcessing box2d;
 ArrayList<Boundary> boundaries;
 ArrayList<Box> boxes;
-
 
 void setup() 
 {
@@ -22,6 +25,9 @@ void setup()
   boundaries.add(new Boundary(0, 0, 2, 1700));
   boundaries.add(new Boundary(0, 699, 1699, 2));
   boundaries.add(new Boundary(698, 0, 2, 1700));
+
+  minim = new Minim(this);
+  music[0] = minim.loadFile("soothingmusic.mp3");
 }
 
 
@@ -31,7 +37,8 @@ void draw()
 
   box2d.step();
 
-  if (random(1) < 0.2) {
+  if (random(1) < 0.2) 
+  {
     Box p = new Box(width/2, 30);
     boxes.add(p);
   }
@@ -62,9 +69,13 @@ void draw()
       for (int i = boxes.size()-1; i >= 0; i--) 
       {
         Box b = boxes.get(i);
-]
+        b.killBody();
         boxes.remove(i);
       }
     }
   }
+
+  textSize(20);
+  text("Press key - a - to", 10, 20 ); 
+  text("restart sand pile", 10, 40);
 }
