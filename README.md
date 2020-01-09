@@ -1,11 +1,11 @@
 # Unit3_FinalProject
-My final project for Creative Coding I is called <i>"Text Art"</i>. It is a Box-2D based game in which the user has freedom to listen to soothing music and relax with subtle colors cubes falling on the screen and piling up.
+My final project for Creative Coding I is called <i>"Text Art"</i>. It is a Box-2D based game in which the user has freedom to produce text based on the speed of their mouse Simultaneously, a heap of sand is falling down and piling up.
 
 <h2>#Interaction</h2>
 <ul>
  My program is interactive. I will include various coding data types to help create the following in my program:
- <li>The cubes will re-start to pile when the key "A" is presses</li>
- <li>The music helps the viewer enjoy and de-stress from their daily tasks.</li>
+ <li>The sand will re-start to pile when the key "A" is pressed</li>
+ <li>The size of text produced depends on the speed while the color is always changing.</li>
  </ul>
 
 <h3>#Milestone #1: November 22nd, 2019</h3>
@@ -22,5 +22,5 @@ My final project for Creative Coding I is called <i>"Text Art"</i>. It is a Box-
 
 <h3>#Milestone #3: December 13th, 2019</h3>
 <ul>
- <li> Add soothing music</li>
+ <li> Add text (size + color as well)</li>
  </ul>
