@@ -1,6 +1,10 @@
-import ddf.minim.*;
-Minim minim;
-AudioPlayer[] music = new AudioPlayer[1];
+/*
+1. Keep letter stationary once printed
+2. Change font of text
+3. Change size of text (depending on mouse speed)
+4. Change color of text (every letter, different color)
+5. Add game (text creates boundary & boxes collide & fall accordingly)
+*/
 
 import shiffman.box2d.*;
 import org.jbox2d.collision.shapes.*;
@@ -10,6 +14,9 @@ import org.jbox2d.dynamics.*;
 Box2DProcessing box2d;
 ArrayList<Boundary> boundaries;
 ArrayList<Box> boxes;
+
+String story = "Coding is the process of using a programming language to get a computer to behave how you want it to. Every line of code tells the computer to do something, and a document full of lines of code is called a script. While the calculations do happen and are essential to the successful running of the program, the programmer does not need to know how they are done. Coding can also boost problem solving and logic skills. ";
+int CurrentLetter = 0;
 
 void setup() 
 {
@@ -25,9 +32,6 @@ void setup()
   boundaries.add(new Boundary(0, 0, 2, 1700));
   boundaries.add(new Boundary(0, 699, 1699, 2));
   boundaries.add(new Boundary(698, 0, 2, 1700));
-
-  minim = new Minim(this);
-  music[0] = minim.loadFile("soothingmusic.mp3");
 }
 
 
@@ -78,4 +82,17 @@ void draw()
   textSize(20);
   text("Press key - a - to", 10, 20 ); 
   text("restart sand pile", 10, 40);
+
+
+  text(story.charAt(CurrentLetter), mouseX, mouseY);
+
+  if (CurrentLetter < story.length()-1)
+  {
+    CurrentLetter++;
+  } 
+  
+  else 
+  {
+    CurrentLetter = 0;
+  }
 }
