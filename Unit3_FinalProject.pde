@@ -2,7 +2,7 @@
 1. Keep letter stationary once printed
 2. Change font of text
 3. Change size of text (depending on mouse speed)
-4. Change color of text (every letter, different color)
+4. Change color of text (every word, different color)
 5. Add game (text creates boundary & boxes collide & fall accordingly)
 */
 
