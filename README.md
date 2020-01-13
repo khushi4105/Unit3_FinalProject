@@ -1,14 +1,11 @@
 # Unit3_FinalProject
-My final project for Creative Coding I is called <i>"Sandy Words"</i>. It is an art & text-based game in which the user has freedom to produce multiple text extracts. They also have to option to enable an automated-voice to recite the text at the speed in which it is being produced. The background is simply present to create a relaxing ambience while the user can listen to their Sandy Words that are produced.
+My final project for Creative Coding I is called <i>"Text Art"</i>. It is a Box-2D based game in which the user has freedom to produce text based on the speed of their mouse Simultaneously, a heap of sand is falling down and piling up.
 
 <h2>#Interaction</h2>
 <ul>
- My program is very interactive. I will include various coding data types to help create the following in my program:
- <li>The text is produced while the mouse is moving</li>
- <li>The size of the text depends on the speed of the mouse</li>
- <li>If the "SPACE" key is pressed, the font & color of the text changes using a random generator</li>
- <li>If the "a" key is pressed, the abstract SAND background re-starts to pile up again</li>
- <li>The music in the background is present for a sense of relaxation</li>
+ My program is interactive. I will include various coding data types to help create the following in my program:
+ <li>The sand will re-start to pile when the key "A" is pressed</li>
+ <li>The size of text produced depends on the speed while the color is always changing.</li>
  </ul>
 
 <h3>#Milestone #1: November 22nd, 2019</h3>
@@ -19,14 +16,11 @@ My final project for Creative Coding I is called <i>"Sandy Words"</i>. It is an 
 
 <h3>#Milestone #2: December 2nd, 2019</h3>
 <ul>
- <li> Add text </li>
- <li> Add SAND drip background </li>
- <li> Add command for the changes included when "SPACE" and "a" keys are pressed </li>
+ <li> Add Box 2D software </li>
+ <li> Add sand cubes dripping & piling up in the background </li>
  </ul>
 
 <h3>#Milestone #3: December 13th, 2019</h3>
 <ul>
- <li> Add text voiceover </li>
- <li> Add soothing background music </li>
- <li> Check if the program works + final touch-up's </li>
+ <li> Add text (size + color as well)</li>
  </ul>
