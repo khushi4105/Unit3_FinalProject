@@ -1,10 +1,3 @@
-/*
- -> Figure out font mishap
- -> Change color of text (every word, different color)
- -> Change size of text (depending on mouse speed)
- -> Add game (text creates boundary & boxes collide & fall accordingly)
- -> Check ReadMe
- */
 
 import shiffman.box2d.*;
 import org.jbox2d.collision.shapes.*;
@@ -19,9 +12,11 @@ PFont Georgia;
 PFont PaperFont;
 
 ArrayList<PVector> Points = new ArrayList<PVector>();
+ArrayList<PVector> colors = new ArrayList<PVector>();
 
 String story = "Coding is the process of using a programming language to get a computer to behave how you want it to. Coding can also boost problem solving and logic skills. ";
 int CurrentLetter = 0;
+
 
 void setup() 
 {
@@ -38,7 +33,7 @@ void setup()
   boundaries.add(new Boundary(0, 699, 1699, 2));
   boundaries.add(new Boundary(698, 0, 2, 1700));
 
-  Georgia = loadFont("123.vlw");
+  Georgia = loadFont("ok.vlw");
   PaperFont = loadFont("paper.vlw");
 }
 
@@ -91,21 +86,28 @@ void draw()
   text("Press key - a - to", 10, 20 ); 
   text("restart sand pile", 10, 40);
 
-  textFont(Georgia);
+  //
 
+  textFont(Georgia);
   text(story.charAt(CurrentLetter), mouseX, mouseY);  
-  Points.add(new PVector(mouseX, mouseY));
+
+  if (dist(pmouseX, pmouseY, mouseX, mouseY) > 7)
+  {
+    Points.add(new PVector(mouseX, mouseY));
+    colors.add(new PVector(random(0, 255), random(0, 255), random(0, 255)));
+
+    if (CurrentLetter < story.length()-1)
+    {
+      CurrentLetter++;
+    } else 
+    {
+      CurrentLetter = 0;
+    }
+  }
 
   for (int i = 0; i< Points.size()-1; i++)
   {
+    fill(colors.get(i).x, colors.get(i).y, colors.get(i).z);
     text(story.charAt(i%158), Points.get(i).x, Points.get(i).y);
-  }
-
-  if (CurrentLetter < story.length()-1)
-  {
-    CurrentLetter++;
-  } else 
-  {
-    CurrentLetter = 0;
   }
 }
