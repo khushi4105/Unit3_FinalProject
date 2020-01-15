@@ -13,12 +13,13 @@ PFont PaperFont;
 
 ArrayList<PVector> Points = new ArrayList<PVector>();
 ArrayList<PVector> colors = new ArrayList<PVector>();
+ArrayList<Integer> size = new ArrayList<Integer>();
 
 String story = "Coding is the process of using a programming language to get a computer to behave how you want it to. Coding can also boost problem solving and logic skills. ";
 int CurrentLetter = 0;
 
 
-void setup() 
+void setup()                                                                                           
 {
   size(700, 700);
 
@@ -86,13 +87,14 @@ void draw()
   text("Press key - a - to", 10, 20 ); 
   text("restart sand pile", 10, 40);
 
-  //
-
   textFont(Georgia);
-  text(story.charAt(CurrentLetter), mouseX, mouseY);  
+  text(story.charAt(CurrentLetter), mouseX, mouseY); 
+  
+float d = dist(pmouseX, pmouseY, mouseX, mouseY) ;
 
-  if (dist(pmouseX, pmouseY, mouseX, mouseY) > 7)
-  {
+  if (d > 10)
+  {    
+    size.add(((Integer)(int)d/2));
     Points.add(new PVector(mouseX, mouseY));
     colors.add(new PVector(random(0, 255), random(0, 255), random(0, 255)));
 
@@ -108,6 +110,7 @@ void draw()
   for (int i = 0; i< Points.size()-1; i++)
   {
     fill(colors.get(i).x, colors.get(i).y, colors.get(i).z);
+    textSize(size.get(i));
     text(story.charAt(i%158), Points.get(i).x, Points.get(i).y);
   }
 }
